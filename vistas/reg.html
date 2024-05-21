@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.3/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="vali.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8e6cf, #dcedc1); 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+            width: 400px;
+            text-align: center; 
+            color: #333333; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #00796b; 
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+            border-radius: 6px; 
+            border: 1px solid #00796b; 
+        }
+
+        label {
+            color: #00796b; 
+        }
+
+        button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button.btn-primary {
+            background-color: #00796b; 
+            border-color: #00796b; 
+            color: white;
+        }
+
+        button.btn-primary:hover {
+            background-color: #004d40; 
+            border-color: #004d40; 
+            transform: scale(1.05); 
+        }
+
+        button.btn-secondary {
+            background-color: #004d40; 
+            border-color: #004d40; 
+            color: white;
+            margin-bottom: 20px; 
+        }
+
+        button.btn-secondary:hover {
+            background-color: #00251a; 
+            border-color: #00251a; 
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="volver-main" class="btn btn-primary" onclick="window.location.href='main.html'">↪Regresar</button>
+        <h1>Sign Up</h1>
+        <form id="registro">
+            <div class="mb-3">
+                <label for="nombre-usuario" class="form-label">Nombre de usuario:</label>
+                <input type="text" class="form-control" id="nombre-usuario" required>
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y apellido:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad:</label>
+                <input type="number" class="form-control" id="edad" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse✔</button>
+        </form>
+    </div>
+</body>
+</html>
